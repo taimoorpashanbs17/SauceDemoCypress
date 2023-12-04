@@ -21,7 +21,7 @@ npm install
 - After installation of packages, open cypress runner, by running command:
 
 ```bash
-node ./node_modules/cypress/bin/cypress open
+./node_modules/cypress/bin/cypress run
 ```
 
 - Choose any browser runner is offering.

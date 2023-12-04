@@ -1,3 +1,6 @@
+/// <reference types="Cypress" />
+
+
 import Login from "../pages/LoginPage"
 import Inventory from "../pages/InventoryPage"
 import Cart from "../pages/CartPage"

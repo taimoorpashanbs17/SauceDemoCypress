@@ -10,6 +10,12 @@ module.exports = defineConfig({
     },
     baseUrl: 'https://www.saucedemo.com/',
     reporter: 'mochawesome',
+    reporterOptions: {
+      reportDir: 'cypress/results',
+      overwrite: false,
+      html: true,
+      json: false,
+    },
   },
 })
 

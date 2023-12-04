@@ -1,3 +1,6 @@
+/// <reference types="Cypress" />
+
+
 class CheckOutInformation{
 
     urlVerification(url){
