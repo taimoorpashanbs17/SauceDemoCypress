@@ -1,0 +1,100 @@
+{
+  "stats": {
+    "suites": 1,
+    "tests": 1,
+    "passes": 1,
+    "pending": 0,
+    "failures": 0,
+    "start": "2023-12-04T11:12:51.946Z",
+    "end": "2023-12-04T11:12:55.979Z",
+    "duration": 4033,
+    "testsRegistered": 1,
+    "passPercent": 100,
+    "pendingPercent": 0,
+    "other": 0,
+    "hasOther": false,
+    "skipped": 0,
+    "hasSkipped": false
+  },
+  "results": [
+    {
+      "uuid": "59e102b6-7bdb-47ac-b397-9eff0d8e980c",
+      "title": "",
+      "fullFile": "cypress/e2e/sample_test.cy.js",
+      "file": "cypress/e2e/sample_test.cy.js",
+      "beforeHooks": [],
+      "afterHooks": [],
+      "tests": [],
+      "suites": [
+        {
+          "uuid": "9f20a534-0f09-4085-844f-a214ecc7c4f1",
+          "title": "Buy item",
+          "fullFile": "",
+          "file": "",
+          "beforeHooks": [],
+          "afterHooks": [],
+          "tests": [
+            {
+              "title": "Buys an item from the site",
+              "fullTitle": "Buy item Buys an item from the site",
+              "timedOut": null,
+              "duration": 3986,
+              "state": "passed",
+              "speed": "fast",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "login.swagLogoDisplaying();\nlogin.enterUser(browseData.username);\nlogin.enterPassword(browseData.password);\nlogin.clickOnLoginButton();\ninventory.urlVerification(urlData.inventory);\ninventory.clickOnProductAddCartButton();\ninventory.checkCartCount(productData.quantity);\ninventory.clickOnCartLogo();\ncart.urlVerification(urlData.cart);\ncart.verifyProductName(productData.name);\ncart.verifyProductDescription(productData.description);\ncart.verifyProductPrice(productData.price);\ncart.verifyProductQuantity(productData.quantity);\ncart.checkCartCount(productData.quantity);\ncart.clickOnCheckButton();\ncheckOutInformation.urlVerification(urlData.checkoutinformation);\ncheckOutInformation.enterFirstName(browseData.firstname);\ncheckOutInformation.enterlastName(browseData.lastname);\ncheckOutInformation.enterPostalCode(browseData.postalcode);\ncheckOutInformation.clickOnContinueButton();\ncheckOutOverView.urlVerification(urlData.checkoutoverview);\ncheckOutOverView.checkOutOverViewHeaderDisplaying();\ncheckOutOverView.checkCartCount(productData.quantity);\ncheckOutOverView.verifyProductName(productData.name);\ncheckOutOverView.verifyProductDescription(productData.description);\ncheckOutOverView.verifyProductPrice(productData.price);\ncheckOutOverView.verifyProductQuantity(productData.quantity);\ncheckOutOverView.verifyItemPrice(productData.price);\ncheckOutOverView.verifyItemTaxPrice(productData.tax);\ncheckOutOverView.verifyTotalProductCartPrice(productData.price, productData.tax);\ncheckOutOverView.clickOnFinishButton();\ncheckOutComplete.urlVerification(urlData.finalcheckout);\ncheckOutComplete.checkCheckOutCompleteTitleDisplaying();\ncheckOutComplete.checkHeaderMessageDisplaying();\ncheckOutComplete.verifyHeaderMessage(productData.successfulordermessage);\ncheckOutComplete.checkOrderTextMessageDisplaying();\ncheckOutComplete.verifyTextMessage(productData.successfultextmessage);\ncheckOutComplete.clickOnBackHomeButton();\ninventory.urlVerification(urlData.inventory);",
+              "err": {},
+              "uuid": "3288ec00-b7c7-4958-ae85-f6531eb919c7",
+              "parentUUID": "9f20a534-0f09-4085-844f-a214ecc7c4f1",
+              "isHook": false,
+              "skipped": false
+            }
+          ],
+          "suites": [],
+          "passes": [
+            "3288ec00-b7c7-4958-ae85-f6531eb919c7"
+          ],
+          "failures": [],
+          "pending": [],
+          "skipped": [],
+          "duration": 3986,
+          "root": false,
+          "rootEmpty": false,
+          "_timeout": 2000
+        }
+      ],
+      "passes": [],
+      "failures": [],
+      "pending": [],
+      "skipped": [],
+      "duration": 0,
+      "root": true,
+      "rootEmpty": true,
+      "_timeout": 2000
+    }
+  ],
+  "meta": {
+    "mocha": {
+      "version": "7.0.1"
+    },
+    "mochawesome": {
+      "options": {
+        "quiet": false,
+        "reportFilename": "mochawesome",
+        "saveHtml": true,
+        "saveJson": true,
+        "consoleReporter": "spec",
+        "useInlineDiffs": false,
+        "code": true
+      },
+      "version": "7.1.3"
+    },
+    "marge": {
+      "options": null,
+      "version": "6.2.0"
+    }
+  }
+}

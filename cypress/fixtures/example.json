@@ -1,0 +1,9 @@
+{
+  "firstname": "Taimoor",
+  "lastname": "Pasha",
+  "postalcode":"54000",
+  "username":"standard_user",
+  "password":"secret_sauce", 
+  "productname":"Sauce Labs Backpack",
+  "productprice":"$29.99"
+}

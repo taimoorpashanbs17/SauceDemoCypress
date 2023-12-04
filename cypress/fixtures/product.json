@@ -1,0 +1,9 @@
+{
+    "name": "Sauce Labs Backpack",
+    "price": "$29.99",
+    "tax": "$2.40",
+    "quantity":1,
+    "description":"carry.allTheThings() with the sleek, streamlined Sly Pack that melds uncompromising style with unequaled laptop and tablet protection.",
+    "successfulordermessage": "Thank you for your order!", 
+    "successfultextmessage": "Your order has been dispatched, and will arrive just as fast as the pony can get there!"
+}
