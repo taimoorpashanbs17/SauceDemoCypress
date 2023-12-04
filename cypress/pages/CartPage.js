@@ -1,3 +1,5 @@
+/// <reference types="Cypress" />
+
 class Cart{
     urlVerification(url){
         cy

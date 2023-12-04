@@ -7,12 +7,18 @@ class Login{
         .url()
         .should('eq', 
         "https://www.saucedemo.com/")
+
+        cy
+        .log("Naviagting to Home Screen")
     }
 
     swagLogoDisplaying(){
         cy
         .get('.login_logo')
         .should('exist')
+
+        cy
+        .log("Swag Logo is displaying")
     }
 
     enterUser(userName){
@@ -20,6 +26,9 @@ class Login{
         .get('#user-name')
         .should('exist')
         .type(userName)
+
+        cy
+        .log("Enter "+userName+" on username field.")
     }
 
     enterPassword(password){
@@ -27,12 +36,18 @@ class Login{
         .get('#password')
         .should('exist')
         .type(password)
+
+        cy
+        .log("Enter "+password+" on password field.")
     }
 
     clickOnLoginButton(){
         cy
         .get('#login-button')
         .click()
+
+        cy
+        .log("Click on Login Button")
     }
 }
 

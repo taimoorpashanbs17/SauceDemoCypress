@@ -1,3 +1,6 @@
+/// <reference types="Cypress" />
+
+
 class CheckOutOverView{
     urlVerification(url){
         cy

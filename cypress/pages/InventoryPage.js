@@ -1,3 +1,6 @@
+/// <reference types="Cypress" />
+
+
 class Inventory{
     urlVerification(url){
         cy
