@@ -1,4 +1,4 @@
-const { defineConfig } = require('cypress')
+const { defineConfig } = require("cypress");
 
 module.exports = defineConfig({
   chromeWebSecurity: false,
@@ -6,16 +6,15 @@ module.exports = defineConfig({
     // We've imported your old cypress plugins here.
     // You may want to clean this up later by importing these.
     setupNodeEvents(on, config) {
-      return require('./cypress/plugins/index.js')(on, config)
+      return require("./cypress/plugins/index.js")(on, config);
     },
-    baseUrl: 'https://www.saucedemo.com/',
-    reporter: 'mochawesome',
+    specPattern: "cypress/e2e/**/*.{js, feature}",
+    baseUrl: "https://www.saucedemo.com/",
+    reporter: "mochawesome",
+    chromeWebSecurity: false,
+    reporter: "cypress-multi-reporters",
     reporterOptions: {
-      reportDir: 'cypress/results',
-      overwrite: false,
-      html: true,
-      json: false,
+      configFile: "reporter-config.json",
     },
   },
-})
-
+});
