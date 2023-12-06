@@ -9,7 +9,7 @@ class Login{
         "https://www.saucedemo.com/")
 
         cy
-        .log("Naviagting to Home Screen")
+        .addContext("Navigating Home Page")
     }
 
     swagLogoDisplaying(){
@@ -18,7 +18,7 @@ class Login{
         .should('exist')
 
         cy
-        .log("Swag Logo is displaying")
+        .addContext("Swag Logo is displaying")
     }
 
     enterUser(userName){
@@ -28,7 +28,7 @@ class Login{
         .type(userName)
 
         cy
-        .log("Enter "+userName+" on username field.")
+        .addContext("Enter "+userName+" on username field.")
     }
 
     enterPassword(password){
@@ -38,7 +38,7 @@ class Login{
         .type(password)
 
         cy
-        .log("Enter "+password+" on password field.")
+        .addContext("Enter "+password+" on password field.")
     }
 
     clickOnLoginButton(){
@@ -47,7 +47,7 @@ class Login{
         .click()
 
         cy
-        .log("Click on Login Button")
+        .addContext("Click on Login Button")
     }
 }
 
