@@ -11,8 +11,7 @@
       "overwrite": false,
       "html": false,
       "json": true,
-      "code": false,
-      "timestamp":"longDate"
+      "code": false
     }
   }
 }

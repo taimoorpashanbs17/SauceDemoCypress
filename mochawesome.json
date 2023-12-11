@@ -1,24 +1,24 @@
 {
   "stats": {
-    "suites": 2,
-    "tests": 2,
-    "passes": 2,
+    "suites": 3,
+    "tests": 3,
+    "passes": 3,
     "pending": 0,
     "failures": 0,
-    "testsRegistered": 2,
+    "testsRegistered": 3,
     "passPercent": 100,
     "pendingPercent": 0,
     "other": 0,
     "hasOther": false,
     "skipped": 0,
     "hasSkipped": false,
-    "start": "2023-12-06T18:21:51.766Z",
-    "end": "2023-12-06T18:21:55.954Z",
-    "duration": 4188
+    "start": "2023-12-07T17:26:17.775Z",
+    "end": "2023-12-07T17:26:22.627Z",
+    "duration": 4852
   },
   "results": [
     {
-      "uuid": "e6059752-e073-4646-bb05-3cf7c4496eec",
+      "uuid": "c603d067-a7e4-4dfe-b83b-04f1275a327f",
       "title": "",
       "fullFile": "cypress/e2e/sample_test.cy.js",
       "file": "cypress/e2e/sample_test.cy.js",
@@ -27,7 +27,7 @@
       "tests": [],
       "suites": [
         {
-          "uuid": "b2b23998-14e0-41f6-9a48-7ac1c2c6b13f",
+          "uuid": "3b1330ed-1f27-4be1-9aae-11a4644a9337",
           "title": "Buy item",
           "fullFile": "",
           "file": "",
@@ -38,29 +38,29 @@
               "title": "Buys an item from the site",
               "fullTitle": "Buy item Buys an item from the site",
               "timedOut": null,
-              "duration": 3457,
+              "duration": 3795,
               "state": "passed",
               "speed": "fast",
               "pass": true,
               "fail": false,
               "pending": false,
-              "context": "[\n  \"06/12/2023, 23:21:55 - Navigating Home Page\",\n  \"06/12/2023, 23:21:55 - Swag Logo is displaying\",\n  \"06/12/2023, 23:21:55 - Enter standard_user on username field.\",\n  \"06/12/2023, 23:21:55 - Enter secret_sauce on password field.\",\n  \"06/12/2023, 23:21:55 - Click on Login Button\"\n]",
+              "context": "[\n  \"07/12/2023, 22:26:21 - Navigating Home Page\",\n  \"07/12/2023, 22:26:21 - Swag Logo is displaying\",\n  \"07/12/2023, 22:26:21 - Enter standard_user on username field.\",\n  \"07/12/2023, 22:26:21 - Enter secret_sauce on password field.\",\n  \"07/12/2023, 22:26:21 - Click on Login Button\",\n  \"07/12/2023, 22:26:21 - URL validated as correct as https://www.saucedemo.com/inventory.html\",\n  \"07/12/2023, 22:26:21 - Clicked on Product Add Button\",\n  \"07/12/2023, 22:26:21 - Scroll to Top\",\n  \"07/12/2023, 22:26:21 - Shopping cart showing correct count i.e. 1\",\n  \"07/12/2023, 22:26:21 - Click on Cart logo\",\n  \"07/12/2023, 22:26:21 - Correct URL is displaying i.e. https://www.saucedemo.com/cart.html\",\n  \"07/12/2023, 22:26:21 - Sauce Labs Backpack is displaying as Product Name\",\n  \"07/12/2023, 22:26:21 - carry.allTheThings() with the sleek, streamlined Sly Pack that melds uncompromising style with unequaled laptop and tablet protection. is displaying\",\n  \"07/12/2023, 22:26:21 - $29.99 is displaying\",\n  \"07/12/2023, 22:26:21 - 1 is displaying as Product Quantity\",\n  \"07/12/2023, 22:26:21 - 1 count is displaying\",\n  \"07/12/2023, 22:26:21 - Clicked on Check Button\",\n  \"07/12/2023, 22:26:21 - Correct URL is displaying i.e. https://www.saucedemo.com/checkout-step-one.html\",\n  \"07/12/2023, 22:26:21 - Taimoor entered on First Name field.\",\n  \"07/12/2023, 22:26:21 - Pasha entered on Last Name field\",\n  \"07/12/2023, 22:26:21 - 54000 entered on Postal Code field.\",\n  \"07/12/2023, 22:26:21 - Clicked on Continue Button\",\n  \"07/12/2023, 22:26:21 - URL displaying is correct i.e. https://www.saucedemo.com/checkout-step-two.html\",\n  \"07/12/2023, 22:26:21 - Check-Out Over View Header Displaying.\",\n  \"07/12/2023, 22:26:21 - Correct Cart count i.e. 1 is displaying.\",\n  \"07/12/2023, 22:26:21 - Sauce Labs Backpack is displaying\",\n  \"07/12/2023, 22:26:21 - Valid Description of Product is displaying\",\n  \"07/12/2023, 22:26:21 - Valid Product price is displaying i.e. $29.99\",\n  \"07/12/2023, 22:26:21 - Product Quantity is displaying fine i.e. 1\",\n  \"07/12/2023, 22:26:21 - Correct Item price was displaying i.e. $29.99\",\n  \"07/12/2023, 22:26:21 - Item Tax price is displaying\",\n  \"07/12/2023, 22:26:21 - Price of Product is displaying on cart\",\n  \"07/12/2023, 22:26:21 - Clicked on Finish Button\",\n  \"07/12/2023, 22:26:21 - Correct URL is displaying i.e. https://www.saucedemo.com/checkout-complete.html\",\n  \"07/12/2023, 22:26:21 - CheckOut Complete Title is displaying\",\n  \"07/12/2023, 22:26:21 - Header Message displaying\",\n  \"07/12/2023, 22:26:21 - Thank you for your order! is displaying\",\n  \"07/12/2023, 22:26:21 - Order Text Message is displaying\",\n  \"07/12/2023, 22:26:21 - Your order has been dispatched, and will arrive just as fast as the pony can get there! is displaying\",\n  \"07/12/2023, 22:26:21 - Clicked on Back to Home Button\",\n  \"07/12/2023, 22:26:21 - URL validated as correct as https://www.saucedemo.com/inventory.html\"\n]",
               "code": "",
               "err": {},
-              "uuid": "4b25982a-c486-4f7b-b62a-f3f683afed4e",
-              "parentUUID": "b2b23998-14e0-41f6-9a48-7ac1c2c6b13f",
+              "uuid": "f3d5d440-759b-46cf-bc43-181f5d436347",
+              "parentUUID": "3b1330ed-1f27-4be1-9aae-11a4644a9337",
               "isHook": false,
               "skipped": false
             }
           ],
           "suites": [],
           "passes": [
-            "4b25982a-c486-4f7b-b62a-f3f683afed4e"
+            "f3d5d440-759b-46cf-bc43-181f5d436347"
           ],
           "failures": [],
           "pending": [],
           "skipped": [],
-          "duration": 3457,
+          "duration": 3795,
           "root": false,
           "rootEmpty": false,
           "_timeout": 2000
@@ -76,7 +76,7 @@
       "_timeout": 2000
     },
     {
-      "uuid": "c500be7a-d376-469b-9081-2a3953cdab24",
+      "uuid": "b480e316-d85f-4ac1-9150-3e6fbfc65176",
       "title": "",
       "fullFile": "cypress/e2e/sample_test.cy.js",
       "file": "cypress/e2e/sample_test.cy.js",
@@ -85,7 +85,7 @@
       "tests": [],
       "suites": [
         {
-          "uuid": "f76d9e40-0151-489f-956e-168b57294175",
+          "uuid": "90142255-09aa-4214-a1da-673c5c9f78d5",
           "title": "Buy item",
           "fullFile": "",
           "file": "",
@@ -96,29 +96,87 @@
               "title": "Buys an item from the site",
               "fullTitle": "Buy item Buys an item from the site",
               "timedOut": null,
-              "duration": 3518,
+              "duration": 4253,
               "state": "passed",
               "speed": "fast",
               "pass": true,
               "fail": false,
               "pending": false,
-              "context": "[\n  \"06/12/2023, 23:21:55 - Navigating Home Page\",\n  \"06/12/2023, 23:21:55 - Swag Logo is displaying\",\n  \"06/12/2023, 23:21:55 - Enter standard_user on username field.\",\n  \"06/12/2023, 23:21:55 - Enter secret_sauce on password field.\",\n  \"06/12/2023, 23:21:55 - Click on Login Button\"\n]",
+              "context": "[\n  \"07/12/2023, 22:26:22 - Navigating Home Page\",\n  \"07/12/2023, 22:26:22 - Swag Logo is displaying\",\n  \"07/12/2023, 22:26:22 - Enter standard_user on username field.\",\n  \"07/12/2023, 22:26:22 - Enter secret_sauce on password field.\",\n  \"07/12/2023, 22:26:22 - Click on Login Button\",\n  \"07/12/2023, 22:26:22 - URL validated as correct as https://www.saucedemo.com/inventory.html\",\n  \"07/12/2023, 22:26:22 - Clicked on Product Add Button\",\n  \"07/12/2023, 22:26:22 - Scroll to Top\",\n  \"07/12/2023, 22:26:22 - Shopping cart showing correct count i.e. 1\",\n  \"07/12/2023, 22:26:22 - Click on Cart logo\",\n  \"07/12/2023, 22:26:22 - Correct URL is displaying i.e. https://www.saucedemo.com/cart.html\",\n  \"07/12/2023, 22:26:22 - Sauce Labs Backpack is displaying as Product Name\",\n  \"07/12/2023, 22:26:22 - carry.allTheThings() with the sleek, streamlined Sly Pack that melds uncompromising style with unequaled laptop and tablet protection. is displaying\",\n  \"07/12/2023, 22:26:22 - $29.99 is displaying\",\n  \"07/12/2023, 22:26:22 - 1 is displaying as Product Quantity\",\n  \"07/12/2023, 22:26:22 - 1 count is displaying\",\n  \"07/12/2023, 22:26:22 - Clicked on Check Button\",\n  \"07/12/2023, 22:26:22 - Correct URL is displaying i.e. https://www.saucedemo.com/checkout-step-one.html\",\n  \"07/12/2023, 22:26:22 - Taimoor entered on First Name field.\",\n  \"07/12/2023, 22:26:22 - Pasha entered on Last Name field\",\n  \"07/12/2023, 22:26:22 - 54000 entered on Postal Code field.\",\n  \"07/12/2023, 22:26:22 - Clicked on Continue Button\",\n  \"07/12/2023, 22:26:22 - URL displaying is correct i.e. https://www.saucedemo.com/checkout-step-two.html\",\n  \"07/12/2023, 22:26:22 - Check-Out Over View Header Displaying.\",\n  \"07/12/2023, 22:26:22 - Correct Cart count i.e. 1 is displaying.\",\n  \"07/12/2023, 22:26:22 - Sauce Labs Backpack is displaying\",\n  \"07/12/2023, 22:26:22 - Valid Description of Product is displaying\",\n  \"07/12/2023, 22:26:22 - Valid Product price is displaying i.e. $29.99\",\n  \"07/12/2023, 22:26:22 - Product Quantity is displaying fine i.e. 1\",\n  \"07/12/2023, 22:26:22 - Correct Item price was displaying i.e. $29.99\",\n  \"07/12/2023, 22:26:22 - Item Tax price is displaying\",\n  \"07/12/2023, 22:26:22 - Price of Product is displaying on cart\",\n  \"07/12/2023, 22:26:22 - Clicked on Finish Button\",\n  \"07/12/2023, 22:26:22 - Correct URL is displaying i.e. https://www.saucedemo.com/checkout-complete.html\",\n  \"07/12/2023, 22:26:22 - CheckOut Complete Title is displaying\",\n  \"07/12/2023, 22:26:22 - Header Message displaying\",\n  \"07/12/2023, 22:26:22 - Thank you for your order! is displaying\",\n  \"07/12/2023, 22:26:22 - Order Text Message is displaying\",\n  \"07/12/2023, 22:26:22 - Your order has been dispatched, and will arrive just as fast as the pony can get there! is displaying\",\n  \"07/12/2023, 22:26:22 - Clicked on Back to Home Button\",\n  \"07/12/2023, 22:26:22 - URL validated as correct as https://www.saucedemo.com/inventory.html\"\n]",
               "code": "",
               "err": {},
-              "uuid": "8cd2dc7a-79a0-4f53-8eff-05d5988ed0ef",
-              "parentUUID": "f76d9e40-0151-489f-956e-168b57294175",
+              "uuid": "186a5498-b9ea-4ea1-a451-801cbfdb499b",
+              "parentUUID": "90142255-09aa-4214-a1da-673c5c9f78d5",
               "isHook": false,
               "skipped": false
             }
           ],
           "suites": [],
           "passes": [
-            "8cd2dc7a-79a0-4f53-8eff-05d5988ed0ef"
+            "186a5498-b9ea-4ea1-a451-801cbfdb499b"
           ],
           "failures": [],
           "pending": [],
           "skipped": [],
-          "duration": 3518,
+          "duration": 4253,
+          "root": false,
+          "rootEmpty": false,
+          "_timeout": 2000
+        }
+      ],
+      "passes": [],
+      "failures": [],
+      "pending": [],
+      "skipped": [],
+      "duration": 0,
+      "root": true,
+      "rootEmpty": true,
+      "_timeout": 2000
+    },
+    {
+      "uuid": "8d613186-6066-4b4c-9005-5eaea43cf8ca",
+      "title": "",
+      "fullFile": "cypress/e2e/sample_test.cy.js",
+      "file": "cypress/e2e/sample_test.cy.js",
+      "beforeHooks": [],
+      "afterHooks": [],
+      "tests": [],
+      "suites": [
+        {
+          "uuid": "03f5790b-6d95-4728-9781-420578640353",
+          "title": "Buy item",
+          "fullFile": "",
+          "file": "",
+          "beforeHooks": [],
+          "afterHooks": [],
+          "tests": [
+            {
+              "title": "Buys an item from the site",
+              "fullTitle": "Buy item Buys an item from the site",
+              "timedOut": null,
+              "duration": 3770,
+              "state": "passed",
+              "speed": "fast",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": "[\n  \"07/12/2023, 22:26:22 - Navigating Home Page\",\n  \"07/12/2023, 22:26:22 - Swag Logo is displaying\",\n  \"07/12/2023, 22:26:22 - Enter standard_user on username field.\",\n  \"07/12/2023, 22:26:22 - Enter secret_sauce on password field.\",\n  \"07/12/2023, 22:26:22 - Click on Login Button\",\n  \"07/12/2023, 22:26:22 - URL validated as correct as https://www.saucedemo.com/inventory.html\",\n  \"07/12/2023, 22:26:22 - Clicked on Product Add Button\",\n  \"07/12/2023, 22:26:22 - Scroll to Top\",\n  \"07/12/2023, 22:26:22 - Shopping cart showing correct count i.e. 1\",\n  \"07/12/2023, 22:26:22 - Click on Cart logo\",\n  \"07/12/2023, 22:26:22 - Correct URL is displaying i.e. https://www.saucedemo.com/cart.html\",\n  \"07/12/2023, 22:26:22 - Sauce Labs Backpack is displaying as Product Name\",\n  \"07/12/2023, 22:26:22 - carry.allTheThings() with the sleek, streamlined Sly Pack that melds uncompromising style with unequaled laptop and tablet protection. is displaying\",\n  \"07/12/2023, 22:26:22 - $29.99 is displaying\",\n  \"07/12/2023, 22:26:22 - 1 is displaying as Product Quantity\",\n  \"07/12/2023, 22:26:22 - 1 count is displaying\",\n  \"07/12/2023, 22:26:22 - Clicked on Check Button\",\n  \"07/12/2023, 22:26:22 - Correct URL is displaying i.e. https://www.saucedemo.com/checkout-step-one.html\",\n  \"07/12/2023, 22:26:22 - Taimoor entered on First Name field.\",\n  \"07/12/2023, 22:26:22 - Pasha entered on Last Name field\",\n  \"07/12/2023, 22:26:22 - 54000 entered on Postal Code field.\",\n  \"07/12/2023, 22:26:22 - Clicked on Continue Button\",\n  \"07/12/2023, 22:26:22 - URL displaying is correct i.e. https://www.saucedemo.com/checkout-step-two.html\",\n  \"07/12/2023, 22:26:22 - Check-Out Over View Header Displaying.\",\n  \"07/12/2023, 22:26:22 - Correct Cart count i.e. 1 is displaying.\",\n  \"07/12/2023, 22:26:22 - Sauce Labs Backpack is displaying\",\n  \"07/12/2023, 22:26:22 - Valid Description of Product is displaying\",\n  \"07/12/2023, 22:26:22 - Valid Product price is displaying i.e. $29.99\",\n  \"07/12/2023, 22:26:22 - Product Quantity is displaying fine i.e. 1\",\n  \"07/12/2023, 22:26:22 - Correct Item price was displaying i.e. $29.99\",\n  \"07/12/2023, 22:26:22 - Item Tax price is displaying\",\n  \"07/12/2023, 22:26:22 - Price of Product is displaying on cart\",\n  \"07/12/2023, 22:26:22 - Clicked on Finish Button\",\n  \"07/12/2023, 22:26:22 - Correct URL is displaying i.e. https://www.saucedemo.com/checkout-complete.html\",\n  \"07/12/2023, 22:26:22 - CheckOut Complete Title is displaying\",\n  \"07/12/2023, 22:26:22 - Header Message displaying\",\n  \"07/12/2023, 22:26:22 - Thank you for your order! is displaying\",\n  \"07/12/2023, 22:26:22 - Order Text Message is displaying\",\n  \"07/12/2023, 22:26:22 - Your order has been dispatched, and will arrive just as fast as the pony can get there! is displaying\",\n  \"07/12/2023, 22:26:22 - Clicked on Back to Home Button\",\n  \"07/12/2023, 22:26:22 - URL validated as correct as https://www.saucedemo.com/inventory.html\"\n]",
+              "code": "",
+              "err": {},
+              "uuid": "9e7b818f-73c2-44cc-95a7-3c192f7054bf",
+              "parentUUID": "03f5790b-6d95-4728-9781-420578640353",
+              "isHook": false,
+              "skipped": false
+            }
+          ],
+          "suites": [],
+          "passes": [
+            "9e7b818f-73c2-44cc-95a7-3c192f7054bf"
+          ],
+          "failures": [],
+          "pending": [],
+          "skipped": [],
+          "duration": 3770,
           "root": false,
           "rootEmpty": false,
           "_timeout": 2000
@@ -158,8 +216,7 @@
         "overwrite": false,
         "html": false,
         "json": true,
-        "code": false,
-        "timestamp": "longDate"
+        "code": false
       },
       "version": "6.2.0"
     }
