@@ -13,19 +13,29 @@
     "delete-results": "rm -rf cypress/results/* || true",
     "mochawesome-merge": "npx mochawesome-merge cypress/results/mochawesome/*.json > mochawesome.json && npx marge mochawesome.json",
     "delete-mochawesome-report": "rm -rf mochawesome-report/* || true",
-    "cypress-regression-pack" : "npm run delete-results && npm run delete-mochawesome-report && npm run triggerAllTests-headless && npm run mochawesome-merge",
-    "cypress-multi-browser": "npm run triggerAllTests-headless -- --browser firefox --headed & npm run triggerAllTests-headless -- --browser chrome --headed & npm run triggerAllTests-headless -- --browser edge --headed",
-    "cypress-multi-browser-regression": "npm run delete-results && npm run delete-mochawesome-report && npm run cypress-multi-browser && npm run mochawesome-merge"
+    "cypress-regression-pack": "npm run delete-results && npm run delete-mochawesome-report && npm run triggerAllTests-headless && npm run mochawesome-merge",
+    "cypress-multi-browser": "npm run triggerAllTests-headless -- --browser firefox --headed & npm run triggerAllTests-headless -- --browser chrome --headed & npm run triggerAllTests-headless -- --browser electron --headed",
+    "cypress-multi-browser-headless": "npm run triggerAllTests-headless -- --browser firefox & npm run triggerAllTests-headless -- --browser chrome & npm run triggerAllTests-headless -- --browser electron",
+    "cypress-multi-browser-regression": "npm run delete-results && npm run delete-mochawesome-report && npm run cypress-multi-browser && npm run mochawesome-merge",
+    "testcases-allure": "npm run triggerAllTests-headless **--env allure=true --reporter mocha-allure-reporter",
+    "generate-allure-reports": "allure generate allure-results --clean -o allure-report && allure open allure-report",
+    "cypress-regression-allure": "npm run testcases-allure && npm run generate-allure-reports"
   },
   "author": "Taimoor Pasha",
   "license": "ISC",
   "devDependencies": {
+    "@shelex/cypress-allure-plugin": "^2.40.1",
+    "allure-commandline": "^2.25.0",
     "cypress": "^13.6.1",
     "cypress-multi-reporters": "^1.6.4",
     "mocha": "^10.2.0",
+    "mocha-allure-reporter": "^1.4.0",
     "mocha-junit-reporter": "^2.2.1",
     "mochawesome": "^7.1.3",
     "mochawesome-merge": "^4.3.0",
     "mochawesome-report-generator": "^6.2.0"
+  },
+  "dependencies": {
+    "save-dev": "^0.0.1-security"
   }
 }
