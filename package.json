@@ -13,9 +13,12 @@
     "delete-results": "rm -rf cypress/results/* || true",
     "mochawesome-merge": "npx mochawesome-merge cypress/results/mochawesome/*.json > mochawesome.json && npx marge mochawesome.json",
     "delete-mochawesome-report": "rm -rf mochawesome-report/* || true",
-    "cypress-regression-pack" : "npm run delete-results && npm run delete-mochawesome-report && npm run triggerAllTests-headless && npm run mochawesome-merge",
+    "cypress-regression-pack": "npm run delete-results && npm run delete-mochawesome-report && npm run triggerAllTests-headless && npm run mochawesome-merge",
     "cypress-multi-browser": "npm run triggerAllTests-headless -- --browser firefox --headed & npm run triggerAllTests-headless -- --browser chrome --headed & npm run triggerAllTests-headless -- --browser edge --headed",
-    "cypress-multi-browser-regression": "npm run delete-results && npm run delete-mochawesome-report && npm run cypress-multi-browser && npm run mochawesome-merge"
+    "cypress-multi-browser-regression": "npm run delete-results && npm run delete-mochawesome-report && npm run cypress-multi-browser && npm run mochawesome-merge",
+    "triggerAllAPITests": "npx cypress run --spec 'cypress/e2e/api/*'",
+    "api-regression-pack": "npm run delete-results && npm run delete-mochawesome-report && npm run triggerAllAPITests && npm run mochawesome-merge",
+    "cypress-web-api-regression" : "npm run delete-results && npm run delete-mochawesome-report && npm run triggerAllAPITests && npm run triggerAllTests-headless && npm run mochawesome-merge"
   },
   "author": "Taimoor Pasha",
   "license": "ISC",
@@ -27,5 +30,9 @@
     "mochawesome": "^7.1.3",
     "mochawesome-merge": "^4.3.0",
     "mochawesome-report-generator": "^6.2.0"
+  },
+  "dependencies": {
+    "ajv": "^8.12.0",
+    "chai-json-schema": "^1.5.1"
   }
 }
