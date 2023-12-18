@@ -1,22 +1,16 @@
-# Sauce Demo Cypress Automation
+# QA Engineer test
 
- This is a sample project to test a web application using Cypress. In this project you will find the configuration required to write tests for the https://www.saucedemo.com/ website. To start with, the login part has already been implemented in the sample_test.spec.js file.
- 
- Following E2E Test cases are automated:
-
- 1. Buys an item from the site
-
-
- Project has implemented with ```JavaScript``` using Page Object Model, and all verification values were used from ```fixtures``` folder.
+ This is a sample project to test a web application using Cypress. In this project you will find the configuration required to write tests for the https://www.saucedemo.com/ website. To start with, the login part has already been implemented in the sample_test.spec.js file.Project has implemented with ```JavaScript``` using Page Object Model, and all verification values were used from ```fixtures``` folder.
 
 
 
 ## Requirements:
 
-
+- Install Cypress.
+- Go to Project directory i.e. 
 
 ```bash
-git clone https://github.com/taimoorpashanbs17/SauceDemoCypress.git
+cd InterviewFrontendTest
 ```
 
 - Install all dependencies using following command:
@@ -24,15 +18,12 @@ git clone https://github.com/taimoorpashanbs17/SauceDemoCypress.git
 npm install
 ```
 
-- After installation of packages, open `packages.json` file and run with any script file:
+- After installation of packages, open cypress runner, by running command:
 
 ```bash
-npm run <script_name> i.e. 
-npm run cypress-multi-browser
+./node_modules/cypress/bin/cypress run
 ```
 
-Or if you want to get results, so use:
+- Choose any browser runner is offering.
+- Run spec file , see the results.
 
-```bash
-npm install cypress-multi-browser-regression
-```
