@@ -6,8 +6,6 @@ class Cart{
             .url()
             .should('eq', 
             url)
-        cy
-            .addContext("Correct URL is displaying i.e. "+url)
     }
 
     checkCartCount(count){
@@ -15,8 +13,6 @@ class Cart{
             .verifyText(cy
                      .get('.shopping_cart_badge'), 
                      count)
-        cy
-            .addContext(count+" count is displaying")
     }
 
     verifyProductName(productName){
@@ -24,8 +20,6 @@ class Cart{
             .verifyText(cy
                      .get('.inventory_item_name'), 
                      productName)
-        cy
-            .addContext(productName+" is displaying as Product Name")
     }
 
     verifyProductDescription(productDescription){
@@ -33,8 +27,6 @@ class Cart{
             .verifyText(cy
                      .get('.inventory_item_desc'), 
                      productDescription)
-        cy
-            .addContext(productDescription+" is displaying")
     }
 
     verifyProductPrice(prodcutPrice){
@@ -42,8 +34,6 @@ class Cart{
             .verifyText(cy
                      .get('.inventory_item_price'), 
                      prodcutPrice)
-        cy
-            .addContext(prodcutPrice+" is displaying")
     }
 
     verifyProductQuantity(productQuantity){
@@ -51,16 +41,12 @@ class Cart{
             .verifyText(cy
                      .get('.cart_quantity'), 
                      productQuantity)
-        cy
-            .addContext(productQuantity+" is displaying as Product Quantity")
     }
 
     clickOnCheckButton(){
         cy
             .get('[data-test="checkout"]')
             .click()
-        cy
-            .addContext("Clicked on Check Button")
     }
 
 }
